@@ -1,0 +1,34 @@
+.postcss {
+  margin: 10px auto;
+  padding: 15px;
+  border: 5px solid rgba(2, 2, 24, 0.685);
+
+}
+
+.ytHead {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.youtube-video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.youtube-video-container::after {
+  display: block;
+  content: "";
+  padding-top: 56.25%;
+}
+
+.youtube-video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
